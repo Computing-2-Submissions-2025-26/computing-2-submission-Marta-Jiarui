@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "test": "mocha web-app/tests/*.test.js",
+    "jsdoc": "jsdoc web-app/sokoban.js -d docs"
+  },
+  "devDependencies": {
+    "mocha": "^11.0.0",
+    "jsdoc": "^4.0.0"
+  },
+  "type": "module"
+}

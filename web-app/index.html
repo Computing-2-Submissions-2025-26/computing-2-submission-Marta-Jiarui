@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sokoban Puzzle</title>
+  <link rel="stylesheet" href="default.css">
+</head>
+<body>
+  <main class="app">
+    <section class="panel">
+      <h1>Sokoban Puzzle</h1>
+      <p class="subtitle">Push every crate onto a target tile.</p>
+
+      <div class="stats">
+        <span id="level">Level 1</span>
+        <span id="moves">Moves: 0</span>
+        <span id="best-moves">Best Moves: 0</span>
+      </div>
+
+      <div class="buttons">
+        <button id="restart" type="button">Restart (R)</button>
+        <button id="undo" type="button">Undo (Z)</button>
+        <button id="next" type="button">Next Level (N)</button>
+      </div>
+
+      <p id="message" class="message"></p>
+    </section>
+
+    <section id="board" class="board" aria-label="Sokoban game board"></section>
+  </main>
+
+  <div id="complete-modal" class="modal hidden">
+    <div class="modal-card">
+      <h2>Level Complete!</h2>
+      <p id="modal-summary">Completed in 0 moves</p>
+
+      <div class="modal-buttons">
+        <button id="modal-replay" type="button">Replay Level</button>
+        <button id="modal-next" type="button">Next Level</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="main.js"></script>
+</body>
+</html>
