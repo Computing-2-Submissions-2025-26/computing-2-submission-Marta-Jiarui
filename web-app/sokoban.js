@@ -272,7 +272,7 @@ Sokoban.isBoxCorrectlyPlaced = function isBoxCorrectlyPlaced(state, position) {
 /**
  * Check whether a list of positions contains a position.
  *
- * @param {{x: number, y: number}[]} positions - Positions to search.
+ * @param {Array<{x: number, y: number}>} positions - Positions to search.
  * @param {{x: number, y: number}} position - Position to find.
  * @returns {boolean} True when the position exists in the list.
  */
